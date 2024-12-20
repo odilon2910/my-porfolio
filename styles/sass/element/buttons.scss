@@ -1,0 +1,29 @@
+.element-btn {
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: $main-color;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem $main-color;
+    font-size: 12px;
+    color: $bc-primary;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    &:hover {
+        box-shadow: none;
+    }
+    &--secondary {
+        border: 1px solid $main-color;
+        background-color: $bc-secondary;
+        color: $main-color;
+        box-shadow: none;
+        &:hover {
+            background-color: $bc-primary;
+            font-size: 15px;
+            border: none;
+            box-shadow: 0 0 1rem $main-color;
+        }
+    }
+}

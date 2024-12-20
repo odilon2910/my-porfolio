@@ -1,0 +1,77 @@
+.home {
+    padding: 100px 0;
+    background-color: $bc-primary;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    @include respond-to("phone") {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    @include respond-to("phone") {
+        display: grid;
+        width: 100%;
+        padding-left: 0;
+    }
+    .home-content {
+        padding-right: 100px;
+        padding-left: 20px;
+        @include respond-to("tablet") {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @include respond-to("phone") {
+            padding-left: 0px;
+            text-align: center;
+            justify-content: center;
+        }
+        h3 {
+            text-align: left;
+            font-size: 25px;
+            color: $text-color;
+            font-weight: 700;
+            @include respond-to("phone") {
+                text-align: center;
+            }
+            &:nth-of-type(2){
+                margin-bottom: 1rem;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: $main-color;
+        }
+        p {
+            font-size: 17px;
+            color: $p_text_color;
+        }
+    }
+    .home-img {
+        margin-top: 40px;
+        margin-right: 40px;
+        @include respond-to("tablet") {
+            margin: 100px 0 0 0;
+            text-align: center;
+        }
+        @include respond-to("phone") {
+            margin: 30px 0 0 0;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        img {
+            width: 350px;
+        }
+        .social-media {
+            margin-left: 65px;
+            @include respond-to("phone") {
+                margin: 0;
+                text-align: center;
+                padding-left: 10px;
+            }
+        }
+    }
+}

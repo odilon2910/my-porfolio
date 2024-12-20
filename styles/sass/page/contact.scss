@@ -1,0 +1,92 @@
+.contact {
+    padding: 50px 0;
+    background-color: $bc-primary;
+    .contact-division {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        list-style: none;
+        color: $text-color;
+        @include respond-to("tablet") {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            margin: 0 10px;
+        }
+        @include respond-to("phone") {
+            display: list-item;
+            padding: 5px 0;
+        }
+        .styles-list-left {
+            padding: 0 50px;
+            background-color: $bc-secondary;
+            @include respond-to("tablet") {
+                padding-right: 10px;
+                padding-top: 0;
+            }
+            @include respond-to("phone") {
+                padding-top: 20px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    color: $text-color;
+                    i {
+                        margin-left: -35px;
+                        color: $main-color;
+                        cursor: pointer;
+                        padding-bottom: 10px;
+                        &:hover {  
+                            font-size: 30px;
+                            background-color: $bc-secondary;
+                            color: $main-color;
+                        }
+                    }
+                    span {
+                        color: black;
+                    }
+                }
+            }
+            a {
+                margin-bottom: 20px;
+                margin-left: 40px;
+            }
+        }
+        .styles-list-right {
+            padding: 0 100px;
+            background-color: $bc-secondary;
+            @include respond-to("tablet") {
+                padding-top: 0;
+                padding-right: 50px;
+                margin-top: 0;
+            }
+            @include respond-to("phone") {
+                padding-top: 10px;
+                margin-top: 30px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    color: $text-color;
+                    i {
+                        margin-left: -35px;
+                        color: $main-color;
+                        background-color: $bc-secondary;
+                        cursor: pointer;
+                        padding-bottom: 10px;
+                        &:hover {
+                            font-size: 30px;
+                            background-color: $bc-secondary;
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+            a {
+                margin-bottom: 20px;
+                margin-left: 31px;
+            }
+        }
+        
+    }
+}

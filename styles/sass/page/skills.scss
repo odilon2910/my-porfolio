@@ -1,0 +1,17 @@
+.skills {
+    padding: 50px 0;
+    background-color: $bc-secondary;
+    meter::-webkit-meter-bar {
+        background: white;
+        border-radius: 5px;
+    }
+    meter::-webkit-meter-optimum-value {
+        background: $main-color;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    meter {
+        width: 200px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,63 @@
+.skills-division {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 50px;
+    @include respond-to("tablet") {
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+    .coding-skils {
+        padding-left: 20px;
+        padding-right: 200px;
+        border: 1px solid $main-color;
+        @include respond-to("tablet") {
+            width: 70%;
+            padding: 0 0 0 10px;
+            margin-bottom: 10px;
+        }
+        @include respond-to("phone") {
+            width: 70%;
+            padding: 0 50px;
+            margin-left: -80px;
+            margin-bottom: 10px;
+        }
+        &:hover {
+            box-shadow: -1rem -1rem 1rem $main-color;
+            border-radius: 30px;
+        }
+        h3 {
+            text-align: left;
+        }
+        label {
+            color: white;
+        }
+    }
+    .professional-skills {
+        padding-left: 20px;
+        padding-right: 200px;
+        border: 1px solid $main-color;
+        @include respond-to("tablet") {
+            width: 70%;
+            padding: 0 15px;
+            margin: 10px 0;
+        }
+        @include respond-to("phone") {
+            width: 70%;
+            padding: 0 50px;
+            margin: 20px 0;
+            margin-left: -80px;
+        }
+        &:hover {
+            box-shadow: 1rem 1rem 1rem $main-color;
+            border-radius: 30px;
+        }
+        h3 {
+            text-align: left;
+        }
+        label {
+            color: white;
+        }
+    }
+}

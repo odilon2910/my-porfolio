@@ -1,0 +1,33 @@
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    @include respond-to("tablet") {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    @include respond-to("phone") {
+        display: grid;
+        width: 100%;
+        padding: 0;
+    }
+    .services-box {
+        padding: 0 10px;
+        margin: 0 20px 30px;
+        flex: 2 2 5px;
+        background-color: $bc-secondary;
+        text-align: center;
+        border: 2px solid $bc-secondary;
+        transition: .5s ease;
+        @include respond-to("tablet") {
+            padding: 0 40px;
+        }
+        &:hover {
+            border-color: $main-color;
+            transform: scale(1.02);
+        }
+    }
+}
